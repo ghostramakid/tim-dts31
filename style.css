@@ -1,0 +1,311 @@
+
+/* Header */
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0 auto;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: dimgrey;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+}
+  
+.logo {
+    width: 150px;
+    margin-top: 10px;
+}
+  
+.header-left {
+    float: left;
+}
+  
+.header-right {
+    float: right;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+  
+.header-right a {
+    line-height: 60px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    text-decoration: none;
+}
+  
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+/* Akhir Header */
+
+
+/* Awalan Bagian-utama */
+
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.awal {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.awal h1 {
+    margin: 0px auto;
+}
+.bagian-utama {
+    padding: 120px 0 100px 0;
+    background-image: url(assets/laptopman.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: 'Futura MD BT';
+}
+
+.bagian-utama h1 {
+    opacity: 0.8;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.animate::before{
+	content: '';
+	animation: animasi infinite 7s;
+    color: white;
+}
+
+@keyframes animasi{
+	0%{
+		content: 'HTML';
+	}
+
+	50%{
+		content: 'CSS';
+	}
+
+	100%{
+		content: 'JavaScript';
+	}
+}
+
+.bagian-utama p {
+    opacity: 0.9;
+    padding-top: 10px;
+    margin: 15px 0 5px 0;
+}
+
+.bagian-utama h2, h3 {
+    opacity: 0.7;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 20px 0 35px 0;
+}
+
+.btn-wrapper h2 {
+    font-size: 20px;
+    opacity: 0.7;
+    letter-spacing: 2px;
+    margin: 30px 0 20px 0;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+    .btn:hover {
+        opacity: 1;
+    }
+
+.dts {
+    background-color: rgba(152, 148, 148, 0.5);
+    margin-bottom: 30px;
+}
+
+.tim {
+    background-color: rgba(152, 148, 148, 0.5);
+}
+/* Awkhir Bagian-utama */
+
+/* Awal Extra1 */
+.container  {
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+.foto img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+#team {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center  ;
+}
+
+#team h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+
+}
+.card {
+    width: 20%;
+    height: 500px;
+    float: left;
+    color: #4C4C4C;
+}
+
+.card h6 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.card p,i {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+/* Akhiran Extra 1 */
+
+/* Extra 2*/
+.contact-form{
+    padding-top: 50px;
+}
+
+.contact-form p {
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+.contact-form {
+    padding-top: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+input, textarea{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+}
+textarea:hover{
+border: 1px solid black;
+}
+input:hover{
+    border: 1px solid black;
+}
+.contact-submit{
+    background-color:#dee7ec;
+    color:#889eab;
+    transition: all 0.5s;
+}
+.contact-submit:hover{
+    background-color: white ;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 1px;
+    color: white;
+    background-color: #696969;
+    text-align: center;
+    font-weight: bold;
+    clear: left;
+}
+
+
+/* Setting untuk responsive */
+@media (max-width: 1000px) {
+    .anggota {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .bagian-utama h1 {
+        font-size: 32px;
+    }
+
+    .heading h2 {
+        font-size: 25px;
+    }
+
+    .card {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+@media (max-width: 670px) {
+    .card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .anggota {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+    .header-right {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #team h3 {
+        text-align: center;
+    }
+}
